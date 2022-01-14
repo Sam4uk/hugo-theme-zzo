@@ -35,9 +35,9 @@
             <a href="{{ . }}" target="_blank" rel="noreferrer">{{ . }}</a>
           </div>
         {{ end }}
-        {{ with .Params.header.infos.download }}
+        {{ with .infos.download }}
         <div class="resume__header--info">
-          <a href="/download/{{ $.Site.Language.Lang }}/{{ .url }}" target="_blank" rel="noreferrer">{{ .title}}</a>
+          <a href="/download/{{ .filename }}" target="_blank" rel="noreferrer">{{ .title }}</a>
         </div>
         {{ end }}
       </article>
