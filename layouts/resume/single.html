@@ -35,6 +35,11 @@
             <a href="{{ . }}" target="_blank" rel="noreferrer">{{ . }}</a>
           </div>
         {{ end }}
+        {{ with .infos.download }}
+        <div class="resume__header--info">
+          <a href="./docum.pdf" target="_blank" rel="noreferrer">{{ .title }}</a>
+        </div>
+        {{ end }}
       </article>
     </main>
   {{ end }}
